@@ -9,7 +9,13 @@
   "author": "Alexandre Ferreira",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.13.2",
     "express": "^4.13.1",
-    "jade": "^1.11.0"
+    "jade": "^1.11.0",
+    "morgan": "^1.6.1",
+    "stylus": "^0.52.0"
+  },
+  "devDependencies": {
+    "bower": "^1.4.1"
   }
 }
