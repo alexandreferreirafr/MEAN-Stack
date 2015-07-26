@@ -37,22 +37,12 @@ db.once('open', function callback() {
 	console.log('Multivision db open');
 });
 
-var messageSchema = mongoose.Schema({message:'string'});
-var Message = mongoose.model('Message', messageSchema);
-var mongoMessage;
-
-Message.findOne().exec(function(err, messageDoc){
-	mongoMessage = messageDoc.message;
-});
-
 app.get('/partials/:partialsPath', function(req, res){
 	res.render('partials/' + req.params.partialsPath);
 });
 
 app.get('*', function(req, res){
-	res.render('index', {
-		mongoMessage : mongoMessage
-	});
+	res.render('index');
 });
 
 var port = process.env.PORT || 3030;
