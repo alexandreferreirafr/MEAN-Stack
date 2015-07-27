@@ -12,3 +12,9 @@ footer p {
   padding: 0 15px;
   border-top: 1px solid #d7d7d7;
 }
+.navbar-form .form-group {
+  margin-left: 10px;
+}
+.navbar-form button {
+  margin-left: 10px;
+}
